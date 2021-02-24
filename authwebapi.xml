@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>authwebapi</name>
+    </assembly>
+    <members>
+        <member name="T:authwebapi.Model.AjaxResult">
+            <summary>
+            通用数据返回类型
+            </summary>
+        </member>
+        <member name="P:authwebapi.Model.AjaxResult.StatusCode">
+            <summary>
+            状态码  无明确意义  前端用Result
+            </summary>
+        </member>
+        <member name="P:authwebapi.Model.AjaxResult.Data">
+            <summary>
+            常规结果都在这里
+            </summary>
+        </member>
+        <member name="P:authwebapi.Model.AjaxResult.OtherData">
+            <summary>
+            特殊传值
+            </summary>
+        </member>
+        <member name="P:authwebapi.Model.AjaxResult.Message">
+            <summary>
+            提示消息
+            </summary>
+        </member>
+        <member name="P:authwebapi.Model.AjaxResult.Success">
+            <summary>
+            true 成功
+            flase 失败
+            </summary>
+        </member>
+        <member name="P:authwebapi.Model.AjaxResult`1.TData">
+            <summary>
+            泛型数据
+            </summary>
+        </member>
+        <member name="M:authwebapi.Utility.CommonExtend.GetCurrentUserInfo(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            基于HttpContext,当前鉴权方式解析，获取用户信息
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:authwebapi.Utility.CustomHSJWTService.GetToken(System.String,System.String,authwebapi.Model.User)">
+            <summary>
+            用户登录成功以后，用来生成Token的方法
+            </summary>
+            <param name="UserName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
